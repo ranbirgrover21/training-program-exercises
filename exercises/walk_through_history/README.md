@@ -28,11 +28,9 @@ However sending a single prewritten html page isn't particuarily useful. So over
 
 
 As you can see templates can be useful for allowing for some changes on the pages, however they don't allow for any interativity on the users end.
-# Part 3 - Forms
-One method we could to capture user info is HTML forms
-![Placeholder 1](./img/Placeholder1.png)
 
-Unfortunately this has the problem that a new page will have to be returned after every time the user inputs data. This isn't a problem for some pages such as user auth, but for highly reactive pages this can be a huge problem
+## The button example
+
 
 # Part 4 - AJAX / FetchAPI
 # Bonus - HTMX

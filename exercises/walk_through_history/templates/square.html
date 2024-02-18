@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Walk through history</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href="favicon.png">
+</head>
+<style>
+    .square {
+        width: 60px;
+        height: 60px;
+    }
+</style>
+<body>
+    {% if on == False %}
+        <div class="square" style="background-color: red;"></div>
+        <a href="/on"><button>Turn on</button></a>
+    {% else %}
+        <div class="square" style="background-color: green;"></div>
+        <a href="/off"><button>Turn off</button></a>
+    {% endif %}
+    {% for number in numbers %}
+        {{ number }}
+    {% endfor %}
+</body>
+</html>
