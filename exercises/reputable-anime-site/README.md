@@ -24,12 +24,23 @@ Inside the video controller define sections for the episode controllers
 
 For fill each section with a different background colour. We're looking to see if the layout is correct and will work on a variety of desktop screen sizes. To test this try resizing your browser window. 
 
+<details style="margin-bottom:30px">
+  <summary><b>Click for Relevant Tailwind Documentation</b></summary>
+  <ul>
+    <li><a href='https://tailwindcss.com/docs/flex'>Flexbox in Tailwind</a></li>
+    <li><a href='https://tailwindcss.com/docs/align-content'>Aligning Flex context</a></li>
+    <li><a href='https://tailwindcss.com/docs/customizing-colors'>Colours</a> (Use with bg-[colour])</li>
+    <li><a href='https://tailwindcss.com/docs/border-radius'>Border Radius</a></li>
+    <li><a href='https://tailwindcss.com/docs/width'>Width Options</a></li>
+  </u1>
+</details>
 
 At this stage your webpage should look similar to the image below.
 
 ![layout](img/PartA.jpg)
 
 If you are so inclined you could also make the layout work for mobile by making the info panel (pink) either disappear on smaller screens or move below the video player.  [Breakpoints](https://tailwindcss.com/docs/responsive-design) will be helpful.
+
 
 # Part B - Complete the Info Panel
 
@@ -41,14 +52,9 @@ Your task is to insert the SeriesInfo component into the main page and finish th
 - The description should be limited to 200 characters until the user presses +show more. Will revert back when -show less is pressed. The show text should be placed after the description.
 - Score card (optional), see design in the original website
 
-<details>
-  <summary>Click for Title, Description and Score</summary>
-  
-    Title: Legend of the Galactic Heroes
-    Score: 9.8
-    Description: For over a century and a half, two interstellar states have wrested for control of the Milky Way. The Galactic Empire, an absolute monarchy ruled by Kaiser Friedrich IV and an entrenched nobility, seeks to suppress the rebels daring to oppose the inviolable crown. The Free Planets Alliance, a representative democracy led by a corrupt High Council, degenerates as its elected leaders⁠ use war and conflict as a way to win popular support. But this long-standing stalemate between the Empire and the Alliance ends with the rise of two opposing military geniuses. Reinhard von Lohengramm, a minor noble and High Admiral of the Empire through his strategic brilliance and his sister's position as the favored concubine of the Kaiser, dreams of conquering the galaxy and uniting mankind under his iron fist. Meanwhile, Yang Wen-li of the Alliance, an avid historian and reluctant commodore hailed as the Hero of El Facil, uses his tactical prowess to navigate around his leaders' incompetence—and to carve the path to lasting peace. As the war rages on, Reinhard and Yang each strive for their ideals and to secure their place among the stars as the leaders of a new era of galactic heroes. [Written by MAL Rewrite] 
-</details>
+For hints refer to the tailwind documenation especially the ones in the dropdown above.
 
+Your page should look simialr to the image below.
 
 ![layout](img/PartB.jpg)
 
@@ -64,7 +70,7 @@ Your task is to complete the following UI components
 - Number all episodes
 - Alternate colours between episodes
 - When an episode is clicked on the left it will change the videosrc for the video player.
-- The selected episode will have a marker to indicate it has been selected. Make sure to align this correctly!
+- The selected episode will have a marker to indicate it has been selected. For simplicity make the marker an emoji of your choice. Make sure to align this correctly!
 
 ### Streaming Service Controls
 - Display all subs and dubs streaming services. These have been hardcoded in VideoController.jsx

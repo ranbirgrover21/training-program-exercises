@@ -20,5 +20,15 @@ Explore all the exercise on offer on our [Guide](https://tas-scorchedshadow.gith
 
 ## Contributing
 
-When adding a new exercise please include a README in the repository. To be consistent with our guide please create a symbolic link to the README inside the relevant chapter in the book directory. You will also need to edit **summary.md** to recognise the new exercise.
+When adding a new exercise
+1. Inside **exercises**, create a new directory to contain the starter code 
+2. Inside **exercise-solutions**, create a new directory to contain the solutions, this should have the same name as the directory in exercises
+3. Create a markdown file with the exercise instructions inside the **book/src** and add it to **book/src/SUMMARY.md**.
 
+
+Please check that the book will render properly by running the following command in the root directory
+``` sh
+$ mdbook build book --open
+```
+
+If the book has been updated correctly a new webpage will open in your browser.
