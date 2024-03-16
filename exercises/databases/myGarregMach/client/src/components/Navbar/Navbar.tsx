@@ -4,6 +4,11 @@
  */
 
 export function Navbar() {
+
+    function logout() {
+        localStorage.clear();
+    }
+
     return (
             
             <div className="flex flex-auto flex-row items-center justify-between w-screen h-[13%] bg-[url('./src/assets/Navbar/Nav_BG.png')] shadow-2xl" >
@@ -22,7 +27,7 @@ export function Navbar() {
                     </div>
                 </div>
                 <div className="px-[3%]">
-                    <a href=''>
+                    <a href='/' onClick={logout}>
                         LOGOUT
                     </a>
                 </div>
