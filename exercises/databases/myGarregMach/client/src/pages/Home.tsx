@@ -1,5 +1,6 @@
 import { Navigate } from "react-router-dom";
 import { Navbar } from "../components/Navbar/Navbar";
+import { Sidebar } from "../components/Sidebar/Sidebar";
 
 export function Home() {
     if (!localStorage.getItem('gId')) {
@@ -9,7 +10,13 @@ export function Home() {
     return (
         <>
             <Navbar/>
-            <h1 className="text-black">This is the home page!</h1>
+            <div className="flex flex-row w-screen h-[87%]">
+                <div className="flex justify-center items-center w-[27.5%] h-full border-2 border-solid border-red-400">
+                    <Sidebar/>
+                </div>
+                <div className="w-[72.5%] h-full border-2 border-solid border-blue-400">
+                </div>
+            </div>
         </>
     );
 }
