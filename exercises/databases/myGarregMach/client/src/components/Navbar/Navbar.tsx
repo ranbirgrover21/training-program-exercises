@@ -4,7 +4,6 @@
  */
 
 export function Navbar() {
-    localStorage.clear();
     return (
             
             <div className="flex flex-auto flex-row items-center justify-between w-screen h-[13%] bg-[url('./src/assets/Navbar/Nav_BG.png')] shadow-2xl" >
