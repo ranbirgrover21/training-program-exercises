@@ -1,9 +1,10 @@
-import { redirect } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import { Navbar } from "../components/Navbar/Navbar";
 
 export function Home() {
-    // const navigate = useNavigate();
-    console.log("HELLo", localStorage.getItem('gId'));
+    if (!localStorage.getItem('gId')) {
+        return <Navigate replace to={"/"}></Navigate>
+    }
 
     return (
         <>
