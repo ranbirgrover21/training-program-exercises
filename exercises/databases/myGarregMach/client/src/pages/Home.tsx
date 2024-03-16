@@ -18,6 +18,7 @@ export function Home() {
                 <div className="flex justify-center w-[72.5%] h-full py-6">
                     <MainBlock>
                         <div className="font-bold text-center text-white leading-[51px] w-[323px] h-[51px] bg-[url('./src/assets/MainBlock/tag.png')]">BULLETIN BOARD</div>
+                        <div className="">slay</div>
                     </MainBlock>
                 </div>
             </div>
