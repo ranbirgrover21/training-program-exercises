@@ -11,7 +11,7 @@ export function Sidebar() {
                 <SidebarSection name="Name" value="Prof. Byleth Eisner" />
             </div>
             <img className="pfp h-[25%] mb-4 rounded-full border border-[#796733] border-dashed border-black" src="https://i.imgur.com/CFIj52E.png"></img>
-            <div className="flex flex-col justify-between h-[65%] w-full">
+            <div className="flex flex-col justify-between h-[65%] w-full overflow-scroll">
                 <SidebarSection name="gID" value={localStorage.getItem('gId') as string}/>
                 <SidebarSection name="Role" value="Lecturer"/>
                 <SidebarSection name="Faculty" value="Combat"/>
