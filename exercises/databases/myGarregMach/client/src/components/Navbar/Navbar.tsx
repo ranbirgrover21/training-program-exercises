@@ -9,6 +9,8 @@ export function Navbar() {
         localStorage.clear();
     }
 
+    const visible = !localStorage.getItem('gId') ? 'invisible' : '';
+
     return (
             
             <div className="flex flex-auto flex-row items-center justify-between w-screen h-[13%] bg-[url('./src/assets/Navbar/Nav_BG.png')] shadow-2xl" >
@@ -18,10 +20,10 @@ export function Navbar() {
                         <a href='' className="font-bold text-xl">
                             myGarregMach
                         </a>
-                        <a href=''>
+                        <a href='/home'>
                             HOME
                         </a>
-                        <a href=''>
+                        <a className={visible} href={localStorage.getItem('USER_TYPE') === 'STUDENT' ? '' : '/staffProfile'}>
                            {localStorage.getItem('USER_TYPE') === 'STUDENT' ? "STUDENT PROFILE" : "STAFF PROFILE"}
                         </a>
                     </div>
