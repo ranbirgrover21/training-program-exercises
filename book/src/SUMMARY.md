@@ -14,3 +14,4 @@
 - [React Basics](04_react-intro/index.md)
 - [Styling](06_styling/index.md)
   - [DevWatch (TailwindCSS)](06_styling/devwatch.md)
+- [Storage](07_storage/index.md)
