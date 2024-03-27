@@ -1,11 +1,16 @@
 
 # 🌱 Introduction to React ⚛︎
+
+---
+
+**Authors**: Nicole Chun
+
 ## Content Summary
 1) [Background and Resources](../index.md)
 2) Setup and Introduction
-3) [Exercise 1](./spec/1-character-card.md) - Character Profile (Markup and JavaScript)
-4) [Exercise 2](./spec/2-links-cookbook.md) - Link's Cookbook (Components and Props)
-3) [BONUS Exercise 3](spec/3-cooler-spotify.md) - Cooler Spotify
+3) [Exercise 1](./1-character-card.md) - Character Profile (Markup and JavaScript)
+4) [Exercise 2](./2-links-cookbook.md) - Link's Cookbook (Components and Props)
+3) [BONUS Exercise 3](./3-cooler-spotify.md) - Cooler Spotify
 
 **Please note that the exercise solutions are contained within the exercise folder for this workshop**
 
