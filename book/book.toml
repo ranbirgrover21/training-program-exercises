@@ -1,9 +1,9 @@
 [book]
-authors = ["Dylan"]
+authors = ["Dylan Huynh", "Nicole Chun", "Jeremy Le", "Alex Lee"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Training Program Exercises"
+title = "DevSoc Training Program Exercises"
 
 [output.html]
 site-url = "/book/"
