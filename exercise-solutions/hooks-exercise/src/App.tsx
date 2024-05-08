@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { File, Line, Resource } from "./types";
+import { File, Line, LineState, Resource } from "./types";
 import Highlight from "./components/Highlight";
 
 const CODE_FILES: File[] = [
@@ -30,11 +30,6 @@ const getRandomLine = async (): Promise<Line> => {
   };
 };
 
-type LineState = {
-  prev: number,
-  curr: number,
-};
-
 export default function App() {
   const [codeLine, setCodeLine] = useState<Line>({
     contents: "console.log('Hello, World!');",
@@ -50,6 +45,12 @@ export default function App() {
       increase: 0.1,
       amount: 0,
       cost: 20,
+    },
+    {
+      name: "Forum Answer",
+      increase: 0.3,
+      amount: 0,
+      cost: 50,
     }
   ]);
 
