@@ -23,7 +23,7 @@ export function ViewStudents() {
         },
         {
             name: 'Hilda Valentine Gonereil',
-            degree: 'Bachelor of Axing and Wyvern Aviation',
+            degree: 'Bachelor of Wyvern Aviation',
             house: 'golden_deer',
             profileUrl: 'https://i.imgur.com/mqFH3Zk.png'
         },
@@ -47,7 +47,7 @@ export function ViewStudents() {
         },
         {
             name: 'Linhardt Von Hevring',
-            degree: 'Bachelor of Theological Magicks',
+            degree: 'Bachelor of Theological Magic',
             house: 'black_eagles',
             profileUrl: 'https://i.imgur.com/IKwv9El.png'
         },
@@ -80,7 +80,7 @@ export function ViewStudents() {
                 </div>
                 <div className="flex flex-col items-center justify-center w-[72.5%] py-10">
                     <MainBlock>
-                        <div className="flex w-[95%] overflow-scroll px-5">
+                        <div className="flex w-[95%] overflow-scroll px-5 justify-center">
                             <div className="grid grid-cols-3 gap-8">
                                 {studentData.map(e => <StudentCard name={e.name} degree={e.degree} house={e.house} profileUrl={e.profileUrl}/>)}
                             </div>

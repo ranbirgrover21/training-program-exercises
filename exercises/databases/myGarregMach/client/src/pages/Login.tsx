@@ -14,6 +14,7 @@ export function Login() {
     function handleSubmit() {
         console.log(gID);
         localStorage.setItem("gId", gID);
+        localStorage.setItem('USER_TYPE', 'STUDENT');
         console.log(password);
         navigate("/home");
     }
@@ -34,7 +35,7 @@ export function Login() {
                             <input type="password" className="w-full shadow-xl p-[10px] mb-7 loginInput"  onChange={e => setPassword(e.target.value)}></input>
                         </div>
                     </div>
-                    <div className="flex justify-center items-center w-[70%] h-[20%] mt-5">
+                    <div className="flex justify-center items-center w-[70%] h-[20%] mt-[3rem]">
                         <GMButton name="Log In" onClick={handleSubmit}/>
                     </div>
                 </div>

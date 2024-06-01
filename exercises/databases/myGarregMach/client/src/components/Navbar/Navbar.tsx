@@ -23,7 +23,7 @@ export function Navbar() {
                         <a href='/home'>
                             HOME
                         </a>
-                        <a className={visible} href={localStorage.getItem('USER_TYPE') === 'STUDENT' ? '' : '/staffProfile'}>
+                        <a className={visible} href={localStorage.getItem('USER_TYPE') === 'STUDENT' ? '/studentProfile' : '/staffProfile'}>
                            {localStorage.getItem('USER_TYPE') === 'STUDENT' ? "STUDENT PROFILE" : "STAFF PROFILE"}
                         </a>
                     </div>
