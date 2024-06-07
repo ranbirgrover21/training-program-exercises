@@ -95,3 +95,5 @@ and set up a loop to increment the number of lines by the correct amount every s
 > amount every second (which could be a decimal amount), but only display an integer
 > number of lines, and only update the code block when a *whole* number of lines
 > changes.
+>
+> You may find the type `LineState` can come in handy.
