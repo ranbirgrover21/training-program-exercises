@@ -117,9 +117,21 @@ export default function App() {
       <div className="bg-gray-200 p-5 w-1/2 mt-10 m-auto">
         <p>Lines of code written: {Math.floor(lines.curr)}</p>
         <br />
-        <button onClick={() => addLines(1)}>Add line</button>
+        <button
+          className="bg-gray-400 p-1 rounded-sm"
+          onClick={() => addLines(1)}>
+          Add line
+        </button>
         {resources.map((res, index) => (
-          <button key={`${res.name}-${index}`} onClick={() => buyResource(index)}>Buy {res.name} ({res.cost} lines)</button>
+          <>
+            <br />
+            <button
+              className="bg-gray-400 mt-1 p-1 rounded-sm"
+              key={`${res.name}-${index}`}
+              onClick={() => buyResource(index)}>
+              Buy {res.name} ({res.cost} lines)
+            </button>
+          </>
         ))}
       </div>
     </div>
