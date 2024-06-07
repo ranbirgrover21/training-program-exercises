@@ -60,7 +60,9 @@ a very bad idea. Fortunately, React has a solution that is much cleaner.
 
 `useState` is React's answer. From the [official React guide](https://react.dev/reference/react/hooks):
 
-> **State lets a component “remember” information like user input.** For example, a form component can use state to store the input value, while an image gallery component can use state to store the selected image index.
+> **State lets a component “remember” information like user input.** For example,
+> a form component can use state to store the input value, while an image gallery
+> component can use state to store the selected image index.
 
 Let us rewrite the example using `useState`:
 
@@ -97,4 +99,82 @@ the same arguments, it will always return the same output. But what happens if
 we don't want that, and we want our components to interact with the outside world
 in some way?
 
-For example, let's say we wanted to make a 
+For example, let's say we wanted to create a component that updated the webpage's
+title:
+
+```jsx
+const App = () => {
+  let [name, setName] = useState("");
+
+  // We want to set the page's title to be `name` whenever we edit our input
+  return (
+    <>
+      <input
+        type="text"
+        value={name}
+        onChange={e => setName(e.target.value)} />
+    </>
+  );
+};
+```
+
+The problem here is that `App` doesn't have access to the webpage's title, since
+React is only "painting" components onto the screen. Each page's title is actually
+controlled by the *browser* itself, which is an external API.
+
+The solution here is to use `useEffect`, which allows us to interact with the
+outside world!
+
+```jsx
+import { useEffect, useState } from "react";
+
+const App = () => {
+  let [name, setName] = useState("");
+
+  // Call this function every time our component renders or updates
+  useEffect(() => {
+    document.title = `Hello ${name}`;
+  });
+
+  return (
+    <>
+      <input
+        type="text"
+        value={name}
+        onChange={e => setName(e.target.value)} />
+    </>
+  );
+};
+```
+
+`useEffect` takes in a function, and runs that function every time the component
+it's in needs to render or update. This works, but the function is called more
+times than necessary - what if we had some other variable that wasn't `name` change?
+Why do we need to update the webpage's title if `name` isn't changed?
+
+`useEffect` actually takes in a *second* argument - the **dependency array**. This
+is a list of variables that the function inside `useEffect` depends on - in other
+words, the function should *only* run if any variable in the dependency array changes
+since the last render. Because the function inside our `useEffect` call only depends
+on `name`, we can put `[name]` as our second argument:
+
+```jsx
+const App = () => {
+  // ...
+  useEffect(() => {
+    document.title = `Hello, ${name}`;
+  }, [name]);
+  // ...
+};
+```
+
+> Having a dependency array also introduces a React *idiom* of sorts, which is
+> providing an empty array as the second argument to `useEffect`:
+> 
+> ```jsx
+> useEffect(() => { /* ... */ }, []);
+> ```
+>
+> In an empty array, nothing ever changes between renders because nothing is available
+> inside the array to *be* changed. Thus, this idiom basically allows us to call
+> a function *once* at the very first render of a component.
