@@ -11,7 +11,7 @@
     "subjects": [
         {
             "course_code": string,
-            "course_title": string
+            "course_title": string,
             "mark": number,
         }
     ]
