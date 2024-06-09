@@ -82,8 +82,8 @@ export function EnrolStudent() {
                                             <BsCaretLeftSquareFill/>
                                         </div>
                                     </button>
-                                    <div className="w-[78%] p-3">
-                                        <img src={houseToFile[houses[carouselIndex]]}></img>
+                                    <div className={`flex justify-center w-[20em] min-h-[20em] p-3`}>
+                                        <div className="w-full bg-contain bg-no-repeat" style={{ backgroundImage: `url(${houseToFile[houses[carouselIndex]]})`}}></div>
                                     </div>
                                     <button onClick={carouselNext}>
                                         <div className="text-4xl text-[rgb(223,211,179)]">

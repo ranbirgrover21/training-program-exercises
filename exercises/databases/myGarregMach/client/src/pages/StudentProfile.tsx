@@ -39,11 +39,11 @@ export function StudentProfile() {
                 </div>
                 <div className="flex justify-center w-[72.5%] h-full py-10">
                     <MainBlock>
-                        <div className="w-[90%]">
+                        <div className="w-[87.5%]">
                             <h1 className="text-3xl">My enrolment</h1>
                         </div>
-                        <div className="w-[90%] overflow-scroll">
-                            <br></br>
+                        <div className="w-[87.5%] overflow-scroll">
+                            <br/>
                             {subjects.map(s => <SubjectCard courseCode={s.course_code} title={s.course_title} mark={s.mark}/>)}
                         </div>
                     </MainBlock>

@@ -14,7 +14,8 @@
             "course_title": string,
             "mark": number,
         }
-    ]
+    ],
+    "user_type": "STUDENT"
 }
 ```
 
@@ -26,6 +27,7 @@
     "role": string,
     "faculty": string,
     "education": ['(Dip.) Mending Spirits', '(BA.) Duelling Arts', '(Phd.) Bladed Combative Techniques'],
-    "teaching": ['SWRD1121', 'SWRD3331', 'FAIH9417']
+    "teaching": ['SWRD1121', 'SWRD3331', 'FAIH9417'],
+    "user_type": "STAFF"
 }
 ```
