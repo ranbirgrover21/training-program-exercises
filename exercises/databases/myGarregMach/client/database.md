@@ -31,3 +31,11 @@
     "user_type": "STAFF"
 }
 ```
+
+## Bulletin Boards
+```js
+{
+    "title": string,
+    "body": string
+}
+```

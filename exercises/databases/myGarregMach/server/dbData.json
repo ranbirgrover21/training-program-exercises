@@ -1,0 +1,80 @@
+{
+    "notices": [
+        {
+            "title": "Power Outage", 
+            "body": "There is a planned outage for myGarregMach scheduled from 1:40 am today."
+        },
+        {
+            "title": "Fishing contest at 9am SHARP",
+            "body": "Flayn is hosting a fishing contest at 9am in the main entrance, please attend"
+        },
+        {
+            "title": "Hogwarts student exchange",
+            "body": "Hogwarts students are coming over for exchange! Please make all of them feel welcomed and safe members of the community"
+        },
+        {
+            "title": "New cafeteria dishes!",
+            "body": "Our chefs have been cooking up some new desserts, and we would like for you to try them out! Mango sago and Strawberry Sorbet are some new additions, get one free at the Cafeteria today!"
+        },
+        {
+            "title": "Local Contest",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
+    ],
+    "students": [
+        {
+            "name": "Lysithea Von Ordelia",
+            "degree": "Doctorate of Magical Arts",
+            "house": "golden_deer",
+            "profileUrl": "https://i.imgur.com/2GALLY6.png"
+        },
+        {
+            "name": "Hilda Valentine Gonereil",
+            "degree": "Bachelor of Wyvern Aviation",
+            "house": "golden_deer",
+            "profileUrl": "https://i.imgur.com/mqFH3Zk.png"
+        },
+        {
+            "name": "Dimitri Alexandre Blaiddyd",
+            "degree": "Bachelor of Combative Arts",
+            "house": "blue_lions",
+            "profileUrl": "https://i.imgur.com/Mfody4E.png"
+        },
+        {
+            "name": "Sylvain Jose Gautier",
+            "degree": "Bachelor of Meelee Combats",
+            "house": "blue_lions",
+            "profileUrl": "https://i.imgur.com/o4QnaS4.png"
+        },
+        {
+            "name": "Dorothea Arnault",
+            "degree": "Diploma of Magical Arts",
+            "house": "black_eagles",
+            "profileUrl": "https://i.imgur.com/4hYjk2t.png"
+        },
+        {
+            "name": "Linhardt Von Hevring",
+            "degree": "Bachelor of Theological Magic",
+            "house": "black_eagles",
+           "profileUrl": "https://i.imgur.com/IKwv9El.png"
+        },
+        {
+            "name": "Felix Hugo Fraldarius",
+            "degree": "Bachelor of Close Combat",
+            "house": "blue_lions",
+            "profileUrl": "https://i.imgur.com/5wCEtt7.png"
+        },
+        {
+            "name": "Claude von Regan",
+            "degree": "Bachelor of Archery",
+            "house": "golden_deer",
+           "profileUrl": "https://i.imgur.com/qHiohyv.png"
+        },
+        {
+            "name": "Edelgard von Hresvelg",
+            "degree": "Bachelor of Warring Defence",
+            "house": "black_eagles",
+            "profileUrl": "https://i.imgur.com/DGaXSpa.png"
+        }
+    ]
+}
