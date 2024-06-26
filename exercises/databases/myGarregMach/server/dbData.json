@@ -26,55 +26,126 @@
             "name": "Lysithea Von Ordelia",
             "degree": "Doctorate of Magical Arts",
             "house": "golden_deer",
-            "profileUrl": "https://i.imgur.com/2GALLY6.png"
+            "profileUrl": "https://i.imgur.com/2GALLY6.png",
+            "password": "studiousmage",
+            "user_type": "STUDENT"
         },
         {
             "name": "Hilda Valentine Gonereil",
             "degree": "Bachelor of Wyvern Aviation",
             "house": "golden_deer",
-            "profileUrl": "https://i.imgur.com/mqFH3Zk.png"
+            "profileUrl": "https://i.imgur.com/mqFH3Zk.png",
+            "password": "lazybrigand",
+            "user_type": "STUDENT"
         },
         {
             "name": "Dimitri Alexandre Blaiddyd",
             "degree": "Bachelor of Combative Arts",
             "house": "blue_lions",
-            "profileUrl": "https://i.imgur.com/Mfody4E.png"
+            "profileUrl": "https://i.imgur.com/Mfody4E.png",
+            "password": "bravelion",
+            "user_type": "STUDENT"
         },
         {
             "name": "Sylvain Jose Gautier",
             "degree": "Bachelor of Meelee Combats",
             "house": "blue_lions",
-            "profileUrl": "https://i.imgur.com/o4QnaS4.png"
+            "profileUrl": "https://i.imgur.com/o4QnaS4.png",
+            "password": "charmingknight",
+            "user_type": "STUDENT"
         },
         {
             "name": "Dorothea Arnault",
             "degree": "Diploma of Magical Arts",
             "house": "black_eagles",
-            "profileUrl": "https://i.imgur.com/4hYjk2t.png"
+            "profileUrl": "https://i.imgur.com/4hYjk2t.png",
+            "password": "melodicsinger",
+            "user_type": "STUDENT"
         },
         {
             "name": "Linhardt Von Hevring",
             "degree": "Bachelor of Theological Magic",
             "house": "black_eagles",
-           "profileUrl": "https://i.imgur.com/IKwv9El.png"
+            "profileUrl": "https://i.imgur.com/IKwv9El.png",
+            "password": "sleepystudent",
+            "user_type": "STUDENT"
         },
         {
             "name": "Felix Hugo Fraldarius",
             "degree": "Bachelor of Close Combat",
             "house": "blue_lions",
-            "profileUrl": "https://i.imgur.com/5wCEtt7.png"
+            "profileUrl": "https://i.imgur.com/5wCEtt7.png",
+            "password": "fiercewarrior",
+            "user_type": "STUDENT"
         },
         {
             "name": "Claude von Regan",
             "degree": "Bachelor of Archery",
             "house": "golden_deer",
-           "profileUrl": "https://i.imgur.com/qHiohyv.png"
+            "profileUrl": "https://i.imgur.com/qHiohyv.png",
+            "password": "cleverarcher",
+            "user_type": "STUDENT"
         },
         {
             "name": "Edelgard von Hresvelg",
             "degree": "Bachelor of Warring Defence",
             "house": "black_eagles",
-            "profileUrl": "https://i.imgur.com/DGaXSpa.png"
+            "profileUrl": "https://i.imgur.com/DGaXSpa.png",
+            "password": "mightyempress",
+            "user_type": "STUDENT"
+        },
+        {
+            "name": "Marianne von Edmund",
+            "degree": "Bachelor of Nursing",
+            "house": "golden_deer",
+            "profileUrl": "https://i.imgur.com/hafU5sv.png",
+            "password": "shybeliever",
+            "user_type": "STUDENT"
+        },
+        {
+            "name": "Lorenz Hellman Gloucester",
+            "degree": "Bachelor of Knightly Studies",
+            "house": "golden_deer",
+            "profileUrl": "https://i.imgur.com/NNEOBNx.png",
+            "password": "snobbynoble",
+            "user_type": "STUDENT"
+        },
+        {
+            "name": "Annette Fantine Dominic",
+            "degree": "Bachelor of Magical Studies",
+            "house": "blue_lions",
+            "profileUrl": "https://i.imgur.com/qhpJAGo.png",
+            "password": "rallyingmage",
+            "user_type": "STUDENT"
+        },
+        {
+            "name": "Ingrid Brandl Galatea",
+            "degree": "Bachelor of Pegasi Warfare",
+            "house": "blue_lions",
+            "profileUrl": "https://i.imgur.com/qW2KGQL.png",
+            "password": "rallyingmage",
+            "user_type": "STUDENT"
+        },
+        {
+            "name": "Hubert von Vestra",
+            "degree": "Bachelor of Dark Sorcery",
+            "house": "black_eagles",
+            "profileUrl": "https://i.imgur.com/B4cCwqL.png",
+            "password": "creepysidekick",
+            "user_type": "STUDENT"
+        },
+        {
+            "name": "Ferdinand von Aegir",
+            "degree": "Bachelor of Noble Warfare",
+            "house": "black_eagles",
+            "profileUrl": "https://i.imgur.com/UNG0Tw1.png",
+            "password": "iconicloudmouth",
+            "user_type": "STUDENT"
+        }  
+    ],
+    "staff": [
+        {
+
         }
     ]
 }
