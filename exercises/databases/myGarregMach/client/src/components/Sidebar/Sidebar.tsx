@@ -11,10 +11,6 @@ const staffData = {
     "teaching": ['SWRD1121', 'SWRD3331', 'FAIH9417']
 }
 
-const studentData = {
-
-}
-
 
 interface houseToFile {
     golden_deer: string;
