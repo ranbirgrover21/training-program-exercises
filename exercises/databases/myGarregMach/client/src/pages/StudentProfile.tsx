@@ -3,7 +3,6 @@ import { Navbar } from "../components/Navbar/Navbar";
 import { Sidebar } from "../components/Sidebar/Sidebar";
 import { SubjectCard } from "../components/StudentProfile/SubjectCard";
 
-
 export function StudentProfile() {
     const subjects = [
         {
