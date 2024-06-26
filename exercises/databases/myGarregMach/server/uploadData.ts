@@ -14,7 +14,6 @@ const app = initializeApp({
 
 const db = getFirestore(app);
 
-
 async function pushData() {
     try {
         for (const col of Object.keys(jsonData)) {
@@ -32,7 +31,15 @@ async function pushData() {
 
 }
 
-await pushData();
-console.log('FINISHED UPLOADING!');
-exit(0);
+const run = async () => {
+    await pushData();
+}
+
+run().then(() => {
+    console.log('FINISHED UPLOADING!');
+    exit(0);
+}).catch((e) => {
+    console.error(e);
+});
+
 
