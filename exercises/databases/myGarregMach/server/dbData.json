@@ -23,6 +23,7 @@
     ],
     "students": [
         {
+            "gID": "5424698",
             "name": "Lysithea Von Ordelia",
             "degree": "Doctorate of Magical Arts",
             "house": "golden_deer",
@@ -58,6 +59,7 @@
             ]
         },
         {
+            "gID": "5420270",
             "name": "Hilda Valentine Gonereil",
             "degree": "Bachelor of Wyvern Aviation",
             "house": "golden_deer",
@@ -83,6 +85,7 @@
             ]
         },
         {
+            "gID": "5427472",
             "name": "Dimitri Alexandre Blaiddyd",
             "degree": "Bachelor of Combative Arts",
             "house": "blue_lions",
@@ -113,6 +116,7 @@
             ]
         },
         {
+            "gID": "5429210",
             "name": "Sylvain Jose Gautier",
             "degree": "Bachelor of Meelee Combats",
             "house": "blue_lions",
@@ -143,6 +147,7 @@
             ]
         },
         {
+            "gID": "5429405",
             "name": "Dorothea Arnault",
             "degree": "Diploma of Magical Arts",
             "house": "black_eagles",
@@ -168,6 +173,7 @@
             ]
         },
         {
+            "gID": "5427795",
             "name": "Linhardt Von Hevring",
             "degree": "Bachelor of Theological Magic",
             "house": "black_eagles",
@@ -203,6 +209,7 @@
             ]
         },
         {
+            "gID": "5425243",
             "name": "Felix Hugo Fraldarius",
             "degree": "Bachelor of Combative Arts",
             "house": "blue_lions",
@@ -228,6 +235,7 @@
             ]
         },
         {
+            "gID": "5423928",
             "name": "Claude von Regan",
             "degree": "Bachelor of Archery",
             "house": "golden_deer",
@@ -258,6 +266,7 @@
             ]
         },
         {
+            "gID": "5422645",
             "name": "Edelgard von Hresvelg",
             "degree": "Bachelor of Warring Defence",
             "house": "black_eagles",
@@ -288,6 +297,7 @@
             ]
         },
         {
+            "gID": "5427420",
             "name": "Marianne von Edmund",
             "degree": "Bachelor of Nursing",
             "house": "golden_deer",
@@ -318,6 +328,7 @@
             ]
         },
         {
+            "gID": "5426637",
             "name": "Lorenz Hellman Gloucester",
             "degree": "Bachelor of Knightly Studies",
             "house": "golden_deer",
@@ -348,6 +359,7 @@
             ]
         },
         {
+            "gID": "5425312",
             "name": "Annette Fantine Dominic",
             "degree": "Bachelor of Magical Studies",
             "house": "blue_lions",
@@ -373,6 +385,7 @@
             ]
         },
         {
+            "gID": "5422146",
             "name": "Ingrid Brandl Galatea",
             "degree": "Bachelor of Pegasi Warfare",
             "house": "blue_lions",
@@ -399,6 +412,7 @@
 
         },
         {
+            "gID": "5420949",
             "name": "Hubert von Vestra",
             "degree": "Bachelor of Dark Sorcery",
             "house": "black_eagles",
@@ -429,6 +443,7 @@
             ]
         },
         {
+            "gID": "5422972",
             "name": "Ferdinand von Aegir",
             "degree": "Bachelor of Noble Warfare",
             "house": "black_eagles",
