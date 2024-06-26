@@ -1,10 +1,6 @@
 {
     "notices": [
         {
-            "title": "Power Outage", 
-            "body": "There is a planned outage for myGarregMach scheduled from 1:40 am today."
-        },
-        {
             "title": "Fishing contest at 9am SHARP",
             "body": "Flayn is hosting a fishing contest at 9am in the main entrance, please attend"
         },
@@ -17,14 +13,18 @@
             "body": "Our chefs have been cooking up some new desserts, and we would like for you to try them out! Mango sago and Strawberry Sorbet are some new additions, get one free at the Cafeteria today!"
         },
         {
-            "title": "Local Contest",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "title": "Lost Item",
+            "body": "A lost item has been found near the training grounds. Please check with the lost and found."
+        },
+        {
+            "title": "Tournament Announcement",
+            "body": "A new tournament is being held this weekend. Sign up at the training grounds!"
         }
     ],
     "students": [
         {
             "gID": "5424698",
-            "name": "Lysithea Von Ordelia",
+            "name": "Lysithea von Ordelia",
             "degree": "Doctorate of Magical Arts",
             "house": "golden_deer",
             "profileUrl": "https://i.imgur.com/2GALLY6.png",
@@ -174,7 +174,7 @@
         },
         {
             "gID": "5427795",
-            "name": "Linhardt Von Hevring",
+            "name": "Linhardt von Hevring",
             "degree": "Bachelor of Theological Magic",
             "house": "black_eagles",
             "profileUrl": "https://i.imgur.com/IKwv9El.png",
@@ -476,7 +476,13 @@
     ],
     "staff": [
         {
-
+            "gId": "5364821",
+            "name": "Byleth Eisner",
+            "role": "Lecturer",
+            "faculty": "Combat",
+            "education": ["(Dip.) Mending Spirits", "(BA.) Duelling Arts", "(Phd.) Bladed Combative Techniques"],
+            "teaching": ["SWRD1121", "SWRD3331", "FAIH9417"],
+            "user_type": "STAFF"
         }
     ]
 }

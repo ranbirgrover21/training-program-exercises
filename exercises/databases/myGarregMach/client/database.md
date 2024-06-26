@@ -2,20 +2,21 @@
 
 ```js
 {
-    "gId": number,
+    "gID": string,
     "name": string,
     "degree": string,
-    "major": string,
-    "wam": number,
-    "house": string,
+    "house": "black_eagles" | "blue_lions" | "golden_deer",
+    "profileUrl": string,
+    "password": string,
+    "user_type": "STUDENT",
     "subjects": [
         {
-            "course_code": string,
-            "course_title": string,
-            "mark": number,
-        }
+            "courseCode": string,
+            "courseTitle": string,
+            "mark": number
+        },
+        ...
     ],
-    "user_type": "STUDENT"
 }
 ```
 
@@ -26,9 +27,9 @@
     "name": string,
     "role": string,
     "faculty": string,
-    "education": ['(Dip.) Mending Spirits', '(BA.) Duelling Arts', '(Phd.) Bladed Combative Techniques'],
-    "teaching": ['SWRD1121', 'SWRD3331', 'FAIH9417'],
-    "user_type": "STAFF"
+    "education": string[],
+    "teaching": string[],
+    "user_type": "STAFF" 
 }
 ```
 

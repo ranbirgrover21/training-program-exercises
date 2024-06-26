@@ -1,4 +1,3 @@
-import { GMButton } from "../components/GMButton/GMButton";
 import { MainBlock } from "../components/MainBlock/MainBlock";
 import { Navbar } from "../components/Navbar/Navbar";
 import { Sidebar } from "../components/Sidebar/Sidebar";
