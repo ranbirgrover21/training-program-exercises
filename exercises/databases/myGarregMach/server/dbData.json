@@ -28,7 +28,34 @@
             "house": "golden_deer",
             "profileUrl": "https://i.imgur.com/2GALLY6.png",
             "password": "studiousmage",
-            "user_type": "STUDENT"
+            "user_type": "STUDENT",
+            "subjects": [
+                {
+                    "courseCode": "REAS3121",
+                    "courseTitle": "Sorcerisms and Magical Techniques",
+                    "mark": 100
+                },
+                {
+                    "courseCode": "REAS1511",
+                    "courseTitle": "Arcane Fundamentals",
+                    "mark": 96
+                },
+                {
+                    "courseCode": "REAS2521",
+                    "courseTitle": "Magic Circles and Sorcerisms",
+                    "mark": 98
+                },
+                {
+                    "courseCode": "FAIH1200",
+                    "courseTitle": "Seirosian Healing",
+                    "mark": 94
+                },
+                {
+                    "courseCode": "FAIH1081",
+                    "courseTitle": "Exegetical Methods",
+                    "mark": 98
+                }
+            ]
         },
         {
             "name": "Hilda Valentine Gonereil",
@@ -36,7 +63,24 @@
             "house": "golden_deer",
             "profileUrl": "https://i.imgur.com/mqFH3Zk.png",
             "password": "lazybrigand",
-            "user_type": "STUDENT"
+            "user_type": "STUDENT",
+            "subjects": [
+                {
+                    "courseCode": "AXNG1101",
+                    "courseTitle": "Axing Fundamentals",
+                    "mark": 85
+                },
+                {
+                    "courseCode": "WYVN1011",
+                    "courseTitle": "Wyvern Riding Basics",
+                    "mark": 75
+                },
+                {
+                    "courseCode": "HERB2041",
+                    "courseTitle": "Herbology Plantation",
+                    "mark": 63
+                }
+            ]
         },
         {
             "name": "Dimitri Alexandre Blaiddyd",
@@ -44,7 +88,29 @@
             "house": "blue_lions",
             "profileUrl": "https://i.imgur.com/Mfody4E.png",
             "password": "bravelion",
-            "user_type": "STUDENT"
+            "user_type": "STUDENT",
+            "subjects": [
+                {
+                    "courseCode": "LNCE1101",
+                    "courseTitle": "Lancing for Beginners",
+                    "mark": 94
+                },
+                {
+                    "courseCode": "COMB2511",
+                    "courseTitle": "Combat-Oriented Design and Battle Techniques",
+                    "mark": 87
+                },
+                {
+                    "courseCode": "REAS9517",
+                    "courseTitle": "Magical Vision",
+                    "mark": 69
+                },
+                {
+                    "courseCode": "LNCE2521",
+                    "courseTitle": "Lancing Stances and Combat Arts",
+                    "mark": 91
+                } 
+            ]
         },
         {
             "name": "Sylvain Jose Gautier",
@@ -52,7 +118,29 @@
             "house": "blue_lions",
             "profileUrl": "https://i.imgur.com/o4QnaS4.png",
             "password": "charmingknight",
-            "user_type": "STUDENT"
+            "user_type": "STUDENT",
+            "subjects": [
+                {
+                    "courseCode": "LNCE1101",
+                    "courseTitle": "Lancing for Beginners",
+                    "mark": 94
+                },
+                {
+                    "courseCode": "WYVN1011",
+                    "courseTitle": "Wyvern Riding Basics",
+                    "mark": 79
+                },
+                {
+                    "courseCode": "REAS3121",
+                    "courseTitle": "Sorcerisms and Magical Techniques",
+                    "mark": 99
+                },
+                {
+                    "courseCode": "REAS2521",
+                    "courseTitle": "Magic Circles and Sorcerisms",
+                    "mark": 94
+                } 
+            ]
         },
         {
             "name": "Dorothea Arnault",
@@ -60,7 +148,24 @@
             "house": "black_eagles",
             "profileUrl": "https://i.imgur.com/4hYjk2t.png",
             "password": "melodicsinger",
-            "user_type": "STUDENT"
+            "user_type": "STUDENT",
+            "subjects": [
+                {
+                    "courseCode": "REAS1511",
+                    "courseTitle": "Arcane Fundamentals",
+                    "mark": 77
+                },
+                {
+                    "courseCode": "REAS3121",
+                    "courseTitle": "Sorcerisms and Magical Techniques",
+                    "mark": 85
+                },
+                {
+                    "courseCode": "REAS2521",
+                    "courseTitle": "Magic Circles and Sorcerisms",
+                    "mark": 91
+                } 
+            ]
         },
         {
             "name": "Linhardt Von Hevring",
@@ -68,15 +173,59 @@
             "house": "black_eagles",
             "profileUrl": "https://i.imgur.com/IKwv9El.png",
             "password": "sleepystudent",
-            "user_type": "STUDENT"
+            "user_type": "STUDENT",
+            "subjects": [
+                {
+                    "courseCode": "REAS1511",
+                    "courseTitle": "Arcane Fundamentals",
+                    "mark": 92
+                },
+                {
+                    "courseCode": "REAS3121",
+                    "courseTitle": "Sorcerisms and Magical Techniques",
+                    "mark": 100
+                },
+                {
+                    "courseCode": "REAS2521",
+                    "courseTitle": "Magic Circles and Sorcerisms",
+                    "mark": 92
+                },
+                {
+                    "courseCode": "FAIH1200",
+                    "courseTitle": "Seirosian Healing",
+                    "mark": 91
+                },
+                {
+                    "courseCode": "FAIH1011",
+                    "courseTitle": "Fundamentals of Faith",
+                    "mark": 94
+                }
+            ]
         },
         {
             "name": "Felix Hugo Fraldarius",
-            "degree": "Bachelor of Close Combat",
+            "degree": "Bachelor of Combative Arts",
             "house": "blue_lions",
             "profileUrl": "https://i.imgur.com/5wCEtt7.png",
             "password": "fiercewarrior",
-            "user_type": "STUDENT"
+            "user_type": "STUDENT",
+            "subjects": [
+                {
+                    "courseCode": "COMB2511",
+                    "courseTitle": "Combat-Oriented Design and Battle Techniques",
+                    "mark": 95
+                },
+                {
+                    "courseCode": "SWRD1511",
+                    "courseTitle": "Swording Fundamentals",
+                    "mark": 86
+                },
+                {
+                    "courseCode": "COMB1521",
+                    "courseTitle": "Battling System Fundamentals",
+                    "mark": 74
+                }
+            ]
         },
         {
             "name": "Claude von Regan",
@@ -84,7 +233,29 @@
             "house": "golden_deer",
             "profileUrl": "https://i.imgur.com/qHiohyv.png",
             "password": "cleverarcher",
-            "user_type": "STUDENT"
+            "user_type": "STUDENT",
+            "subjects": [
+                {
+                    "courseCode": "ARCH1101",
+                    "courseTitle": "Bows for Beginners",
+                    "mark": 84
+                },
+                {
+                    "courseCode": "ARCH2101",
+                    "courseTitle": "Archery Advances",
+                    "mark": 75
+                },
+                {
+                    "courseCode": "WYVN1011",
+                    "courseTitle": "Wyvern Riding Basics",
+                    "mark": 73
+                },
+                {
+                    "courseCode": "WYVN2202",
+                    "courseTitle": "Further Wyvern Flying Techniques",
+                    "mark": 74
+                }
+            ]
         },
         {
             "name": "Edelgard von Hresvelg",
@@ -92,7 +263,29 @@
             "house": "black_eagles",
             "profileUrl": "https://i.imgur.com/DGaXSpa.png",
             "password": "mightyempress",
-            "user_type": "STUDENT"
+            "user_type": "STUDENT",
+            "subjects": [
+                {
+                    "courseCode": "AXNG1101",
+                    "courseTitle": "Axing Fundamentals",
+                    "mark": 89
+                },
+                {
+                    "courseCode": "AXING2511",
+                    "courseTitle": "Proper Axing Techniques",
+                    "mark": 92
+                },
+                {
+                    "courseCode": "COMB1521",
+                    "courseTitle": "Battling System Fundamentals",
+                    "mark": 91
+                },
+                {
+                    "courseCode": "COMB2511",
+                    "courseTitle": "Combat-Oriented Design and Battle Techniques",
+                    "mark": 84
+                }
+            ]
         },
         {
             "name": "Marianne von Edmund",
@@ -100,7 +293,29 @@
             "house": "golden_deer",
             "profileUrl": "https://i.imgur.com/hafU5sv.png",
             "password": "shybeliever",
-            "user_type": "STUDENT"
+            "user_type": "STUDENT",
+            "subjects": [
+                {
+                    "courseCode": "FAIH1011",
+                    "courseTitle": "Fundamentals of Faith",
+                    "mark": 82
+                },
+                {
+                    "courseCode": "FAIH1081",
+                    "courseTitle": "Exegetical Methods",
+                    "mark": 70
+                },
+                {
+                    "courseCode": "FAIH1200",
+                    "courseTitle": "Seirosian Healing",
+                    "mark": 91
+                },
+                {
+                    "courseCode": "FAIH3121",
+                    "courseTitle": "Advanced Healing Techniques",
+                    "mark": 80
+                }
+            ]
         },
         {
             "name": "Lorenz Hellman Gloucester",
@@ -108,7 +323,29 @@
             "house": "golden_deer",
             "profileUrl": "https://i.imgur.com/NNEOBNx.png",
             "password": "snobbynoble",
-            "user_type": "STUDENT"
+            "user_type": "STUDENT",
+            "subjects": [
+                {
+                    "courseCode": "LNCE1101",
+                    "courseTitle": "Lancing for Beginners",
+                    "mark": 65
+                },
+                {
+                    "courseCode": "LNCE2521",
+                    "courseTitle": "Lancing Stances and Combat Arts",
+                    "mark": 74
+                },
+                {
+                    "courseCode": "HRSE1011",
+                    "courseTitle": "Equestrian Fundamentals",
+                    "mark": 72
+                },
+                {
+                    "courseCode": "ETQT2041",
+                    "courseTitle": "Further Etiquette Development",
+                    "mark": 89
+                }
+            ]
         },
         {
             "name": "Annette Fantine Dominic",
