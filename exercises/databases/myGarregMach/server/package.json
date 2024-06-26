@@ -4,14 +4,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "upload": "ts-node uploadData.ts"
+    "upload": "ts-node uploadData.ts",
+    "start": "nodemon --exec ts-node src/index.ts"
   },
   "author": "JeydinNewWon",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.19.2",
-    "firebase": "^10.12.2"
+    "firebase": "^10.12.2",
+    "nodemon": "^3.1.4"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
