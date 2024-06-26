@@ -353,15 +353,50 @@
             "house": "blue_lions",
             "profileUrl": "https://i.imgur.com/qhpJAGo.png",
             "password": "rallyingmage",
-            "user_type": "STUDENT"
+            "user_type": "STUDENT",
+            "subjects": [
+                {
+                    "courseCode": "REAS1511",
+                    "courseTitle": "Arcane Fundamentals",
+                    "mark": 89
+                },
+                {
+                    "courseCode": "REAS2521",
+                    "courseTitle": "Magic Circles and Sorcerisms",
+                    "mark": 84
+                },
+                {
+                    "courseCode": "REAS3121",
+                    "courseTitle": "Sorcerisms and Magical Techniques",
+                    "mark": 87
+                }
+            ]
         },
         {
             "name": "Ingrid Brandl Galatea",
             "degree": "Bachelor of Pegasi Warfare",
             "house": "blue_lions",
             "profileUrl": "https://i.imgur.com/qW2KGQL.png",
-            "password": "rallyingmage",
-            "user_type": "STUDENT"
+            "password": "loyalknight",
+            "user_type": "STUDENT",
+            "subjects": [
+                {
+                    "courseCode": "PEGA1011",
+                    "courseTitle": "Pegasus Riding for Beginners",
+                    "mark": 74
+                },
+                {
+                    "courseCode": "PEGA2022",
+                    "courseTitle": "Further Pegasus Riding Techniques",
+                    "mark": 83
+                },
+                {
+                    "courseCode": "LNCE1101",
+                    "courseTitle": "Lancing for Beginners",
+                    "mark": 71
+                }
+            ]
+
         },
         {
             "name": "Hubert von Vestra",
@@ -369,7 +404,29 @@
             "house": "black_eagles",
             "profileUrl": "https://i.imgur.com/B4cCwqL.png",
             "password": "creepysidekick",
-            "user_type": "STUDENT"
+            "user_type": "STUDENT",
+            "subjects": [
+                {
+                    "courseCode": "REAS1511",
+                    "courseTitle": "Arcane Fundamentals",
+                    "mark": 96
+                },
+                {
+                    "courseCode": "REAS2521",
+                    "courseTitle": "Magic Circles and Sorcerisms",
+                    "mark": 93
+                },
+                {
+                    "courseCode": "REAS3121",
+                    "courseTitle": "Sorcerisms and Magical Techniques",
+                    "mark": 98
+                },
+                {
+                    "courseCode": "FAIH1011",
+                    "courseTitle": "Fundamentals of Faith",
+                    "mark": 54
+                }
+            ]
         },
         {
             "name": "Ferdinand von Aegir",
@@ -377,7 +434,29 @@
             "house": "black_eagles",
             "profileUrl": "https://i.imgur.com/UNG0Tw1.png",
             "password": "iconicloudmouth",
-            "user_type": "STUDENT"
+            "user_type": "STUDENT",
+            "subjects": [
+                {
+                    "courseCode": "ETQT2041",
+                    "courseTitle": "Further Etiquette Development",
+                    "mark": 99
+                },
+                {
+                    "courseCode": "REAS1511",
+                    "courseTitle": "Arcane Fundamentals",
+                    "mark": 60
+                },
+                {
+                    "courseCode": "HRSE1011",
+                    "courseTitle": "Equestrian Fundamentals",
+                    "mark": 81
+                },
+                {
+                    "courseCode": "LNCE1101",
+                    "courseTitle": "Lancing for Beginners",
+                    "mark": 71
+                }
+            ]
         }  
     ],
     "staff": [
