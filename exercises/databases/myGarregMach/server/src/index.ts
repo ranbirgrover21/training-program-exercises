@@ -3,6 +3,7 @@ import express, { NextFunction, Request, Response } from 'express';
 import { SERVER_PORT } from '../../config.json';
 import { login } from './funcs/login';
 import { notices } from './funcs/notices';
+import { studentDetails } from './funcs/studentDetails';
 
 const errorHandler = require('http-errors-middleware');
 const cors = require('cors');
@@ -31,6 +32,17 @@ app.get('/notices', async (req: Request, res: Response, next: NextFunction) => {
 
   try {
     const result = await notices();
+    res.send(result);
+  } catch (e) {
+    next(e);
+  }
+});
+
+app.get('/studentDetails', async (req: Request, res: Response, next: NextFunction) => {
+  const { gID } = req.query;
+
+  try {
+    const result = await studentDetails(gID as string);
     res.send(result);
   } catch (e) {
     next(e);
