@@ -2,6 +2,7 @@
 import express, { NextFunction, Request, Response } from 'express';
 import { SERVER_PORT } from '../../config.json';
 import { login } from './funcs/login';
+import { notices } from './funcs/notices';
 
 const errorHandler = require('http-errors-middleware');
 const cors = require('cors');
@@ -24,11 +25,16 @@ app.post('/login', async (req: Request, res: Response, next : NextFunction) => {
   } catch (e) {
     next(e);
   }
-
 });
 
 app.get('/notices', async (req: Request, res: Response, next: NextFunction) => {
 
+  try {
+    const result = await notices();
+    res.send(result);
+  } catch (e) {
+    next(e);
+  }
 });
 
 app.use(errorHandler( { debug : true }));
