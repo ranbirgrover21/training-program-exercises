@@ -16,8 +16,12 @@ async function execQuery(ref: CollectionReference, gID: string, password: string
 }
 
 export async function login(gID: string, password: string) : Promise<LoginReturn> {
-  const db : Firestore = getDb();
+  const db = getDb();
   const studentsRef = collection(db, 'students');
+
+  if (!(/^-?\d+$/.test(gID)) || !password) {
+    throw HTTPError(400, 'Invalid gID or password');
+  }
 
   const studentQuerySnapshot = await execQuery(studentsRef, gID, password);
 
@@ -30,7 +34,6 @@ export async function login(gID: string, password: string) : Promise<LoginReturn
   }
 
   const staffRef = collection(db, 'staff');
-
   const staffQuerySnapshot = await execQuery(staffRef, gID, password);
 
   if (!staffQuerySnapshot.empty) {
@@ -42,5 +45,5 @@ export async function login(gID: string, password: string) : Promise<LoginReturn
     }
   }
 
-  throw HTTPError(400, 'INVALID USER');
+  throw HTTPError(401, 'Invalid user credentials');
 }

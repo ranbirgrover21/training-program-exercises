@@ -26,7 +26,7 @@ const noticeData = [
 ]
 
 export function Home() {
-    if (!localStorage.getItem('gId')) {
+    if (!localStorage.getItem('gID')) {
         return <Navigate replace to={"/"}></Navigate>
     }
 

@@ -27,6 +27,10 @@ app.post('/login', async (req: Request, res: Response, next : NextFunction) => {
 
 });
 
+app.get('/notices', async (req: Request, res: Response, next: NextFunction) => {
+
+});
+
 app.use(errorHandler( { debug : true }));
 
 app.listen(SERVER_PORT, () => {

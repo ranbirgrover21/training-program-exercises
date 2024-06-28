@@ -4,7 +4,7 @@ import '../../css/Sidebar.css';
 import { SidebarSectionList } from "./SidebarSectionList";
 
 const staffData = {
-    "gId": localStorage.getItem('gId') as string,
+    "gID": localStorage.getItem('gID') as string,
     "role": "Lecturer",
     "faculty": "Combat",
     "education": ['(Dip.) Mending Spirits', '(BA.) Duelling Arts', '(Phd.) Bladed Combative Techniques'],
@@ -28,7 +28,7 @@ const houseToFile : houseToFile = {
 export function Sidebar() {
 
     const staffProfile = [
-        <SidebarSection name="gID" value={staffData.gId}/>, 
+        <SidebarSection name="gID" value={staffData.gID}/>, 
         <SidebarSection name="Role" value={staffData.role}/>,
         <SidebarSection name="Faculty" value={staffData.faculty}/>,
         <SidebarSectionList name="Education" values={staffData.education}/>,
@@ -36,7 +36,7 @@ export function Sidebar() {
     ];
 
     const studentProfile = [
-        <SidebarSection name="gID" value={localStorage.getItem('gId') as string}/>, 
+        <SidebarSection name="gID" value={localStorage.getItem('gID') as string}/>, 
         <SidebarSection name="Degree" value="Bachelor of Magical Arts"/>,
         <SidebarSection name="Major" value="Dark Magic"/>,
         <SidebarSection name="Overall WAM" value="93.21"/>,
@@ -46,7 +46,7 @@ export function Sidebar() {
         <div className="flex flex-col items-center w-[80%] h-[92.5%] bg-[#D9D9D9] rounded-2xl p-6 ">
             <div className="w-full mb-5 flex justify-between">
                 <SidebarSection name="Name" value="Prof. Byleth Eisner" />
-                <img className='max-h-[4.25rem]' src={houseToFile['black_eagles']}></img>
+               { localStorage.getItem('USER_TYPE') == 'STUDENT' &&  <img className='max-h-[4.25rem]' src={houseToFile['black_eagles']}></img>}
             </div>
             <img className="pfp max-h-[8rem] mb-4 rounded-full border border-[#796733] border-dashed border-black" src="https://i.imgur.com/CFIj52E.png"></img>
             <div className="flex flex-col h-[65%] w-full overflow-scroll">

@@ -8,10 +8,10 @@ import { EnrolStudent } from './pages/EnrolStudent';
 import { StudentProfile } from './pages/StudentProfile';
 
 function App() {
-  const gId = localStorage.getItem('gId');
+  const gID = localStorage.getItem('gID');
   return (
     <Routes>
-      <Route path="/" element={ gId ? <Navigate replace to={"/home"}></Navigate> : <Login/> }></Route>
+      <Route path="/" element={ gID ? <Navigate replace to={"/home"}></Navigate> : <Login/> }></Route>
       <Route path="/home" element={<Home/> }></Route>
       <Route path="/login" element={<Navigate replace to={"/"}/>}></Route>
       <Route path="/staffProfile" element={<StaffProfile/>}/>

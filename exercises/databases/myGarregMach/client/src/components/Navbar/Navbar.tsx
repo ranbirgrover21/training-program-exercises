@@ -9,7 +9,7 @@ export function Navbar() {
         localStorage.clear();
     }
 
-    const visible = !localStorage.getItem('gId') ? 'invisible' : '';
+    const visible = !localStorage.getItem('gID') ? 'invisible' : '';
 
     return (
             
