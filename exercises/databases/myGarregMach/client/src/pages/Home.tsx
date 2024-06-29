@@ -10,13 +10,20 @@ import { AxiosResponse } from "axios";
 import { useEffect, useState } from "react";
 import { User } from "../interfaces/user";
 
+
+async function requestUserData(route: '/staffDetails' | '/studentDetails', gID: string) : Promise<AxiosResponse> {
+  return await getAxios().get(route, { params: { gID } });
+}
+
 export function Home() {
-	if (!localStorage.getItem('gID')) {
+  const gID = localStorage.getItem('gID');
+	if (!gID) {
 		return <Navigate replace to={"/"}></Navigate>
 	}
 
 	const [noticeData, setNoticeData] = useState([]);
   const [userData, setUserData] = useState({});
+  const userType = localStorage.getItem('USER_TYPE');
 
 	useEffect(() => {
 		getAxios()
@@ -27,7 +34,22 @@ export function Home() {
 			.catch((err) => {
 				console.error(err);
 			});
-    
+
+    const route = userType == 'STAFF' ? '/staffDetails' : '/studentDetails';
+
+    requestUserData(route, gID)
+      .then((res : AxiosResponse) => {
+        if (userType == 'STAFF') {
+          setUserData(res.data.staff);
+          console.log(res.data.staff);
+        } else {
+          setUserData(res.data.student);
+          console.log(res.data.student);
+        }
+      })
+      .catch((err) => {
+        console.error(err);
+      });
     
 	}, []);
 

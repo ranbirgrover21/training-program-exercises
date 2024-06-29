@@ -6,4 +6,5 @@ export interface Student extends User {
   password: string;
   user_type: 'STUDENT';
   subjects: Subject[];
+  degree: string;
 }
