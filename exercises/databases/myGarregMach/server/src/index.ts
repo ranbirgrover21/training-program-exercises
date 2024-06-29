@@ -4,6 +4,7 @@ import { SERVER_PORT } from '../../config.json';
 import { login } from './funcs/login';
 import { notices } from './funcs/notices';
 import { studentDetails } from './funcs/studentDetails';
+import { staffDetails } from './funcs/staffDetails';
 
 const errorHandler = require('http-errors-middleware');
 const cors = require('cors');
@@ -47,6 +48,18 @@ app.get('/studentDetails', async (req: Request, res: Response, next: NextFunctio
   } catch (e) {
     next(e);
   }
+});
+
+app.get('/staffDetails', async (req: Request, res: Response, next: NextFunction) => {
+  const { gID } = req.query;
+
+  try {
+    const result = await staffDetails(gID as string);
+    res.send(result);
+  } catch (e) {
+    next(e);
+  }
+
 });
 
 app.use(errorHandler( { debug : true }));

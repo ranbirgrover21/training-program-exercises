@@ -8,6 +8,7 @@ import { NoticeBoard } from "../components/NoticeBoard/NoticeBoard";
 import { getAxios } from "../util/axios";
 import { AxiosResponse } from "axios";
 import { useEffect, useState } from "react";
+import { User } from "../interfaces/user";
 
 export function Home() {
 	if (!localStorage.getItem('gID')) {
@@ -15,6 +16,7 @@ export function Home() {
 	}
 
 	const [noticeData, setNoticeData] = useState([]);
+  const [userData, setUserData] = useState({});
 
 	useEffect(() => {
 		getAxios()
@@ -25,6 +27,8 @@ export function Home() {
 			.catch((err) => {
 				console.error(err);
 			});
+    
+    
 	}, []);
 
 	return (
@@ -32,7 +36,7 @@ export function Home() {
 			<Navbar/>
 			<div className="flex flex-row w-screen h-[87%]">
 				<div className="flex justify-center items-center w-[27.5%] h-full">
-					<Sidebar/>
+					<Sidebar userData={userData as User}/>
 				</div>
 				<div className="flex justify-center w-[72.5%] h-full py-6">
 					<MainBlock>

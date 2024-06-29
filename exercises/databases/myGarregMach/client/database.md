@@ -25,11 +25,13 @@
 {
     "gId": string,
     "name": string,
+    "password": string,
     "role": string,
     "faculty": string,
     "education": string[],
     "teaching": string[],
-    "user_type": "STAFF" 
+    "user_type": "STAFF",
+    "profileUrl": string
 }
 ```
 
