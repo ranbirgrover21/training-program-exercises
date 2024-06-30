@@ -34,7 +34,7 @@ export function Home() {
     const route = userType == 'STAFF' ? '/staffDetails' : '/studentDetails';
     if (localStorage.getItem('userData')) {
       const data = JSON.parse(localStorage.getItem('userData') as string);
-
+      console.log('running!');
       if (userType == 'STAFF') {
         setUserData(data.staff);
       } else {
@@ -50,7 +50,7 @@ export function Home() {
         } else {
           setUserData(res.data.student);
         }
-        localStorage.setItem('userData', JSON.stringify(userData));
+        localStorage.setItem('userData', JSON.stringify(res.data));
       })
       .catch((err) => {
         console.error(err);

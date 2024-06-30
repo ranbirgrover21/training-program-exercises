@@ -30,7 +30,7 @@ export async function studentDetails(gID: string) : Promise<StudentDetailsReturn
   if (querySnapshot.empty) throw HTTPError(400, 'Invalid Student sGID');
 
   return {
-      student: querySnapshot.docs[0].data() as Student
+    student: querySnapshot.docs[0].data() as Student
   };
 
 }

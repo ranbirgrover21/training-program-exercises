@@ -9,7 +9,6 @@ import { Staff } from "../interfaces/staff";
 
 export function StaffProfile() {
   const [staffData, setStaffData] = useState({});
-
   const gID = localStorage.getItem('gID');
 
   useEffect(() => {

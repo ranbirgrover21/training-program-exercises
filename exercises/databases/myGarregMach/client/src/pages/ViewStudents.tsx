@@ -31,15 +31,20 @@ export function ViewStudents() {
   const gID = localStorage.getItem('gID');
 
   useEffect(() => {
-    getAxios()
-    .get('/studentCards')
-    .then((res: AxiosResponse) => {
-      setStudentCards(res.data.studentCards);
-      localStorage.setItem('studentCards', JSON.stringify(res.data));
-    })
-    .catch((err) => {
-      console.error(err);
-    });
+
+    if (!localStorage.getItem('studentCards')) {
+      getAxios()
+        .get('/studentCards')
+        .then((res: AxiosResponse) => {
+          setStudentCards(res.data.studentCards);
+          localStorage.setItem('studentCards', JSON.stringify(res.data));
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    } else {
+      setStudentCards(JSON.parse(localStorage.getItem('studentCards') as string).studentCards);
+    }
 
     const dataString = localStorage.getItem('userData');
     if (dataString) {
