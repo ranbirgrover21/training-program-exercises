@@ -47,9 +47,9 @@ export function Sidebar(props: SidebarProps) {
     const studentData = userData as Student;
 
     studentProfile = [
-      <SidebarSection name="gID" value={studentData.gID}/>, 
-      <SidebarSection name="Degree" value={studentData.degree}/>,
-      <SidebarSection name="Overall WAM" value={""}/>,
+      <SidebarSection key={0} name="gID" value={studentData.gID}/>, 
+      <SidebarSection key={1} name="Degree" value={studentData.degree}/>,
+      <SidebarSection key={2} name="Overall WAM" value={""}/>,
     ];
   }
   

@@ -1,8 +1,3 @@
-/**
- * 
- * @returns flex-auto flex-row justify-between w-screen border-2 border-solid
- */
-
 export function Navbar() {
   function logout() {
     localStorage.clear();

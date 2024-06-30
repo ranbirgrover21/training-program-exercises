@@ -5,6 +5,7 @@ import { login } from './funcs/login';
 import { notices } from './funcs/notices';
 import { studentDetails } from './funcs/studentDetails';
 import { staffDetails } from './funcs/staffDetails';
+import { studentCards } from './funcs/studentCards';
 
 const errorHandler = require('http-errors-middleware');
 const cors = require('cors');
@@ -60,6 +61,16 @@ app.get('/staffDetails', async (req: Request, res: Response, next: NextFunction)
     next(e);
   }
 
+});
+
+app.get('/studentCards', async (req: Request, res: Response, next: NextFunction) => {
+
+  try {
+    const result = await studentCards();
+    res.send(result);
+  } catch (e) {
+    next(e);
+  }
 });
 
 app.use(errorHandler( { debug : true }));

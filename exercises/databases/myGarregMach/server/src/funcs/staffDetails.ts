@@ -18,7 +18,6 @@ interface StaffDetailsReturn {
   staff: Staff;
 }
 
-
 export async function staffDetails(gID: string) : Promise<StaffDetailsReturn> {
   const db = getDb();
   const querySnapshot = await getDocs(query(collection(db, 'staff'), where('gID', '==', gID), limit(1)));
