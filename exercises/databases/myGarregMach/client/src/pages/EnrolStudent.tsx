@@ -9,8 +9,13 @@ import { BsCaretRightSquareFill } from "react-icons/bs";
 import '../css/EnrolStudent.css';
 import { useEffect, useState } from "react";
 import { requestUserData } from "../util/requestUserData";
-import { AxiosResponse } from "axios";
+import { AxiosError, AxiosResponse } from "axios";
 import { Staff } from "../interfaces/staff";
+import { getAxios } from "../util/axios";
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 interface houseToFile {
   golden_deer: string;
@@ -31,15 +36,21 @@ export function EnrolStudent() {
   const [carouselIndex, setCarousel] = useState(0);
   const [staffData, setStaffData] = useState({});
 
+  const [newgID, setnewgID] = useState("");
+  const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+  const [profileUrl, setProfileUrl] = useState("");
+  const [degree, setDegree] = useState("");
+
   function navBack() {
     navgiate('/staffProfile');
   }
 
-  function carouselNext() {
+  const carouselNext = () => {
     setCarousel((carouselIndex + 1) % houses.length);
   }
 
-  function carouselPrev() {
+  const carouselPrev = () => {
     let val = carouselIndex - 1;
     if (carouselIndex - 1 < 0) {
         val = houses.length - 1;
@@ -67,6 +78,25 @@ export function EnrolStudent() {
       });
   }, []);
 
+  const onSubmit = () => {
+    getAxios()
+      .post('/enrolStudent', { 
+        gID: newgID,
+        name: name,
+        password: password,
+        profileUrl: profileUrl,
+        degree: degree,
+        house: houses[carouselIndex]
+      })
+      .then((res: AxiosResponse) => {
+        toast.success('Successfully added student!');
+        localStorage.removeItem('studentCards');
+      })
+      .catch((err) => {
+        toast.error(err.response.data.error.message);
+      });
+  }
+
   return (
     <>
       <Navbar/>
@@ -82,18 +112,20 @@ export function EnrolStudent() {
             <div className="flex flex-row w-[92%] h-[100%]">
               <div className="flex flex-col justify-between w-[70%] py-3">
                 <div>
+                  <h1 className='text-lg'>gID</h1>
+                  <input className="enrol-input w-[45%] shadow-md" onChange={e => setnewgID(e.target.value)}></input>
                   <h1 className="text-lg">Name</h1>
-                  <input className="enrol-input h-[2rem] w-[85%] shadow-md"></input>
+                  <input className="enrol-input  w-[85%] shadow-md" onChange={e => setName(e.target.value)}></input>
                   <h1 className="text-lg">Default Password</h1>
-                  <input className="enrol-input h-[2rem] w-[85%] shadow-md" type="password"></input>
+                  <input className="enrol-input w-[85%] shadow-md" type="password" onChange={e => setPassword(e.target.value)}></input>
                   <h1 className="text-lg">Profile Picture URL</h1>
-                  <input className="enrol-input h-[2rem] w-[85%] shadow-md"></input>
+                  <input className="enrol-input w-[85%] shadow-md" onChange={e => setProfileUrl(e.target.value)}></input>
                   <h1 className="text-lg">Degree</h1>
-                  <input className="enrol-input h-[2rem] w-[45%] shadow-md"></input>
+                  <input className="enrol-input w-[45%] shadow-md" onChange={e => setDegree(e.target.value)}></input>
                 </div>
                 <div className="submit-container">
-                  <button>
-                    <div className="w-[8rem] p-3 bg-[#D9D9D9]">Submit</div>
+                  <button onClick={onSubmit}>
+                    <div className="w-[8rem] p-3 bg-[#D9D9D9] mt-[0.5em]">Submit</div>
                   </button>
                 </div>
               </div>
@@ -121,6 +153,7 @@ export function EnrolStudent() {
           <div className="w-[92.5%]">
               <GMButton name='Back' onClick={navBack}/>
           </div>
+          <ToastContainer position="top-right" theme="colored" autoClose={3000}/>
         </div>
       </div>
     </>

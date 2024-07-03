@@ -17,7 +17,7 @@ export function Home() {
 		return <Navigate replace to={"/"}></Navigate>
 	}
 
-	const [noticeData, setNoticeData] = useState([]);
+  const [noticeData, setNoticeData] = useState([]);
   const [userData, setUserData] = useState({});
   const userType = localStorage.getItem('USER_TYPE');
 
@@ -34,7 +34,6 @@ export function Home() {
     const route = userType == 'STAFF' ? '/staffDetails' : '/studentDetails';
     if (localStorage.getItem('userData')) {
       const data = JSON.parse(localStorage.getItem('userData') as string);
-      console.log('running!');
       if (userType == 'STAFF') {
         setUserData(data.staff);
       } else {
