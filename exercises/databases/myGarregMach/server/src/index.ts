@@ -6,6 +6,7 @@ import { notices } from './funcs/notices';
 import { studentDetails } from './funcs/studentDetails';
 import { staffDetails } from './funcs/staffDetails';
 import { studentCards } from './funcs/studentCards';
+import { enrolStudent } from './funcs/enrolStudent';
 
 const errorHandler = require('http-errors-middleware');
 const cors = require('cors');
@@ -71,6 +72,18 @@ app.get('/studentCards', async (req: Request, res: Response, next: NextFunction)
   } catch (e) {
     next(e);
   }
+});
+
+app.post('/enrolStudent', async (req: Request, res: Response, next: NextFunction) => {
+  const { gID, name, password, profileUrl, degree, house } = req.body;
+
+  try {
+    const result = await enrolStudent(gID, name, password, profileUrl, degree, house);
+    res.send(result);
+  } catch (e) {
+    next(e);
+  }
+
 });
 
 app.use(errorHandler( { debug : true }));
