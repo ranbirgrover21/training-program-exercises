@@ -5,7 +5,7 @@ import { GMButton } from "../components/GMButton/GMButton";
 import { useNavigate } from "react-router";
 import { Alert } from "@mui/material";
 import { getAxios } from "../util/axios";
-import { AxiosError, AxiosResponse } from "axios";
+import { AxiosResponse } from "axios";
 
 export function Login() {
   const [gID, setGID] = useState("");
@@ -21,8 +21,38 @@ export function Login() {
         password
       })
       .then((res: AxiosResponse) => {
+        ///// DON'T CHANGE CODE ABOVE!!! ////
+
+        /* Exercise 1 — Basic Local Storage */
+
+        /**
+         * The res variable will return a response from the backend.
+         * 
+         * To access it, you can do res.data 
+         * You can look over at server/funcs/login.ts to get an idea of what res.data 
+         * will look like, but for quick reference, it will look like this:
+         * 
+         * {
+         *    "gID" : string,
+         *    "user_type": "STAFF" | "STUDENT"
+         * }
+         * 
+         * Your task is to store gID inside the gID field, and user_type inside the USER_TYPE
+         * fields in localStorage. If done correctly, the Login button should work and redirect you.
+         * 
+         * You can use Professor Byleth's credentials for Login:
+         * 
+         * gID: 5364821
+         * password: pokerfaceprof
+         */
+
+
+        // Add your code here!!! 
+
         localStorage.setItem("gID", gID);
         localStorage.setItem('USER_TYPE', res.data.user_type);
+
+        ///// DO NOT CHANGE BELOW!! ////
         setError(false);
         navigate("/home");
       })

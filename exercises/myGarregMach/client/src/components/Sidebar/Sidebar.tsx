@@ -46,10 +46,19 @@ export function Sidebar(props: SidebarProps) {
   } else {
     const studentData = userData as Student;
 
+    let wamTotal = 0;
+    let num = 0;
+    if ('subjects' in studentData) {
+      for (const subject of studentData.subjects) {
+        wamTotal += subject.mark;
+        num += 1;
+      }
+    }
+
     studentProfile = [
       <SidebarSection key={0} name="gID" value={studentData.gID}/>, 
       <SidebarSection key={1} name="Degree" value={studentData.degree}/>,
-      <SidebarSection key={2} name="Overall WAM" value={""}/>,
+      <SidebarSection key={2} name="Overall WAM" value={`${num === 0 ? wamTotal : (wamTotal * 100 / num) / 100 }`}/>,
     ];
   }
   

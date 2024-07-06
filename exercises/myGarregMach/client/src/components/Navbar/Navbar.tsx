@@ -1,6 +1,23 @@
 export function Navbar() {
   function logout() {
+
+    // DO NOT CHANGE CODE ABOVE!! //
+
+    /**
+     * Exercise 2 — Simple localStorage clear.
+     * 
+     * To perform a logout, you need to clear ALL of localStorage. 
+     * 
+     * You can confirm it worksby clicking the Logout button on the navbar and
+     * you will be redirected back to the home screen!
+     * 
+     */
+
+    // ADD YOUR CODE HERE!!!
+
     localStorage.clear();
+
+    // DO NOT CHANGE CODE BELOW!! //
   }
 
   const visible = !localStorage.getItem('gID') ? 'invisible' : '';

@@ -31,30 +31,29 @@ export function Home() {
 				console.error(err);
 			});
 
-    const route = userType == 'STAFF' ? '/staffDetails' : '/studentDetails';
-    if (localStorage.getItem('userData')) {
+		const route = userType == 'STAFF' ? '/staffDetails' : '/studentDetails';
+		if (localStorage.getItem('userData')) {
       const data = JSON.parse(localStorage.getItem('userData') as string);
       if (userType == 'STAFF') {
         setUserData(data.staff);
       } else {
         setUserData(data.student);
       }
-      return;
-    }
+		  return;
+		}
 
-    requestUserData(route, gID)
+		requestUserData(route, gID)
       .then((res : AxiosResponse) => {
         if (userType == 'STAFF') {
-          setUserData(res.data.staff);
+        setUserData(res.data.staff);
         } else {
-          setUserData(res.data.student);
+        setUserData(res.data.student);
         }
         localStorage.setItem('userData', JSON.stringify(res.data));
       })
       .catch((err) => {
         console.error(err);
       });
-    
 	}, []);
 
 	return (
