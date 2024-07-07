@@ -8,6 +8,8 @@ ATTENTION!
 
 The Church of Seiros is upgrading their existing medieval pen-and-paper student enrolment system to a new-and-improved online system for Garreg Mach Monastery. Unfortunately, the recent invasion of the *Death Knight* has scared off all the software engineers ~~(cowards)~~, leaving the conversion incomplete.
 
+![garreg-mach](img/garreg-mach.jpg)
+
 In response, Professor Byleth, (a man of *too* many talents), has been comissioned by the Church to finish off the work left over by the previous engineers. Lucky for him, the frontend and *most* of the backend has already been completed.
 ## Startup
 
