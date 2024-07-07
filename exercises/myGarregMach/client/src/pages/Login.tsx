@@ -38,7 +38,7 @@ export function Login() {
          * }
          * 
          * Your task is to store gID inside the gID field, and user_type inside the USER_TYPE
-         * fields in localStorage. If done correctly, the Login button should work and redirect you.
+         * field in localStorage. If done correctly, the Login button should work and redirect you.
          * 
          * You can use Professor Byleth's credentials for Login:
          * 
@@ -46,11 +46,7 @@ export function Login() {
          * password: pokerfaceprof
          */
 
-
         // Add your code here!!! 
-
-        localStorage.setItem("gID", gID);
-        localStorage.setItem('USER_TYPE', res.data.user_type);
 
         ///// DO NOT CHANGE BELOW!! ////
         setError(false);

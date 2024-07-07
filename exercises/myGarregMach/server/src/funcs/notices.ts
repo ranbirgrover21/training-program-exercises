@@ -33,7 +33,7 @@ export async function notices() : Promise<NoticeReturn> {
    * - getDb(), a pre-written helper function that loads the necessary database credentials to create a 
    * Firestore instance to interact with the database.
    * - collection(), a firestore function that returns a CollectionRef, (which also acts as a query) 
-   * - getDocs(), a function that takes in a query and fetches all documents that match it in a QuerySnapshot.
+   * - getDocs(), a Promise-based function that takes in a query and fetches all documents that match it in a QuerySnapshot.
    * 
    * Make sure to await your Promise-based functions!!! (like getDocs) :D
    * 
