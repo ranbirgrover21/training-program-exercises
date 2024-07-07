@@ -14,3 +14,6 @@
 - [React Basics](04_react-intro/index.md)
 - [Styling](06_styling/index.md)
   - [DevWatch (TailwindCSS)](06_styling/devwatch.md)
+- [Databases](07_databases/index.md)
+  - [Setup](07_databases/setup.md)
+  - [MyGarregMach (Databases)](07_databases/myGarregMach.md)
