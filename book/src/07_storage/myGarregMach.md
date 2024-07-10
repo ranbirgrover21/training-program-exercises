@@ -138,7 +138,7 @@ await getDocs(query(collection(databaseRef, collectionName), where(documentField
 In this piece of code, the `where` is akin to an SQL statement WHERE. So for example, if I want to find a staff member that has `gID` of `'5364821'`, this is represented in SQL as, `SELECT * FROM staff WHERE gID = '5364821'`. We can modify this to Firestore's modules with this:
 
 ```js
-where(gID, '==', '5364821')
+where('gID', '==', '5364821')
 ```
 
 Using this information, your task is to go to `server/src/funcs/studentDetails.ts` and complete the stub. There is already existing information (and code from other functions) that might provide you a clue as to how to implement this! 
