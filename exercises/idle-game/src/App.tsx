@@ -31,5 +31,26 @@ const getRandomLine = async (): Promise<Line> => {
 };
 
 export default function App() {
-  return <></>;
+  const codeLine = {
+    contents: "console.log('Hello, World!');",
+    language: "javascript",
+  };
+
+  return (
+    <div>
+      <div className="bg-gray-200 p-2 w-1/2 mt-5 m-auto rounded-md">
+        <Highlight
+          contents={codeLine.contents}
+          language={codeLine.language} />
+      </div>
+      <div className="bg-gray-200 p-5 w-1/2 mt-10 m-auto">
+        <p>Lines of code written: {0}</p>
+        <br />
+        <button
+          className="bg-gray-400 p-1 rounded-sm">
+          Add line
+        </button>
+      </div>
+    </div>
+  );
 }

@@ -19,14 +19,15 @@ This is... `scrip.ts`.
 Before running the app, make sure you have NPM installed (preferably the latest
 version).
 
-To run the app itself, run `npm run dev`. Nothing should be on the screen right
-now, because your app is empty.
+To run the app itself, run `npm run dev`. Your game looks something like this: ![](images/start.png)
 
 ## Tasks
 
 You will need to implement all of your functionality in the functional component
 `App`. At the end of all of these exercises, your finished SPA should look something
 like this: ![](images/game.png)
+
+See the game in action [here](images/game.mp4).
 
 > This exercise uses **TypeScript** instead of JavaScript. You do not need to worry
 > too much about types - most of the code to do with types has already been set up
@@ -35,8 +36,9 @@ like this: ![](images/game.png)
 
 ### Task 1: Counting lines
 
-Let's first begin by implementing the line counter and the "Add lines" button. Use
-`useState` to keep track of the number of lines we've gained, and wire that up to
+Let's first begin by implementing the line counter and the "Add lines" button.
+
+Use `useState` to keep track of the number of lines we've gained, and wire that up to
 the button such that every time we click the button, the number of lines increments.
 
 ### Task 2: Making it prettier
