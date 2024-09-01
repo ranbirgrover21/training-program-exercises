@@ -15,6 +15,8 @@ the genre, where you slowly gain resources to advance further and further along 
 overarching story.
 - [**Clicker Heroes**](https://www.clickerheroes.com/) - increase your damage per second and
 defeat stronger and stronger monsters.
+- [**Asbury Pines**](https://store.steampowered.com/app/2212790/Asbury_Pines/) - a murder
+mystery that uses the mechanics of idle games.
 
 If you want to find more interesting games in the genre, have a look at [r/incremental_games](https://www.reddit.com/r/incremental_games/).
 
