@@ -51,7 +51,7 @@ const App = () => {
 };
 ```
 
-While this would work, imagine if *every* variable that persists between renders
+While this would work, imagine if *every* variable that we want React to "remember"
 was made into a global variable. It's not necessarily a problem if we have one or
 two components, but large-scale apps often have hundreds, if not *thousands*, of
 components that depend on each other. You would need tens of thousands of global
@@ -75,7 +75,7 @@ Fortunately, React has a solution that is much cleaner.
 > a form component can use state to store the input value, while an image gallery
 > component can use state to store the selected image index.
 
-Let us rewrite the example using `useState`:
+This is exactly what we want! Let us rewrite our original example using `useState`:
 
 ```jsx
 import { useState } from "react";
