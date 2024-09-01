@@ -18,6 +18,7 @@ Utility:
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - enables you to run local servers for development
 - [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) - for editing HTML/XML tags
+- [FindItFaster](https://marketplace.visualstudio.com/items?itemName=TomRijndorp.find-it-faster) - Better search leveraging fzf
 - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens) - display errors inline to avoid hovering
 - [Git Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) - displays more Git information
 - [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)

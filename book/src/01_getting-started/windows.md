@@ -2,6 +2,8 @@
 
 Historically, Windows has not been the preferred OS for most web developers, but with the introduction of [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/about) (WSL and WSL2), this allows us to install a linux distribution on Windows. This means we can run a real linux environment on our Windows system.
 
+If you would prefer a local install see our [Windows(Local)](./windows-local.md) guide.
+
 ## Installing WSL
 
 The following steps will install Linux in your Windows environment. We will reference the official [WSL Install Guide](https://learn.microsoft.com/en-us/windows/wsl/install).
