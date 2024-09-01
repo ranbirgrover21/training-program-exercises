@@ -3,6 +3,10 @@ import { useEffect, useState } from "react";
 import { File, Line, LineState, Resource } from "./types";
 import Highlight from "./components/Highlight";
 
+/**
+ * A constant that maps each code file in `public/code` to what language
+ * that file is written in.
+ */
 const CODE_FILES: File[] = [
   {
     filename: "WarpPacket.java",
@@ -14,6 +18,12 @@ const CODE_FILES: File[] = [
   }
 ];
 
+/**
+ * Fetches a random line from any file in `public/code`. Used for 
+ * Exercise 2 of implementing `scrip.ts`, where we want to display
+ * a new code line every time we click the "Add line" button.
+ * @returns the contents and language of a line of code, wrapped in the `Line` type.
+ */
 const getRandomLine = async (): Promise<Line> => {
   const fileIndex = Math.floor(Math.random() * CODE_FILES.length);
   const file = CODE_FILES[fileIndex];
@@ -31,6 +41,8 @@ const getRandomLine = async (): Promise<Line> => {
 };
 
 export default function App() {
+  // TODO: Task 2 - modify `codeLine` to "update" every time we
+  // click the "Add line" button.
   const codeLine = {
     contents: "console.log('Hello, World!');",
     language: "javascript",
@@ -44,6 +56,10 @@ export default function App() {
           language={codeLine.language} />
       </div>
       <div className="bg-gray-200 p-5 w-1/2 mt-10 m-auto">
+        {/**
+          * TODO: Task 1 - have this counter update every time we click
+          * the "Add line" button.
+          **/}
         <p>Lines of code written: {0}</p>
         <br />
         <button
