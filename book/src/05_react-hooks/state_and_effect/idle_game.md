@@ -59,21 +59,30 @@ the button such that every time we click the button, the number of lines increme
 
 ### Task 2: Making it prettier
 
-Having just a number go up when we click the button is good and all, but we want
-some more interactivity! Now's the perfect time to introduce `useEffect`, and
-implement the code block at the very top.
+Making a number go up is cool and all, but it doesn't have enough pizzazz - our next
+task is to make the "line of code display" at the very top change whenever we add
+a new line of code.
 
-Some pieces of the puzzle have been implemented for you:
-- The `Highlight` component in `components/Highlight.tsx` takes in two fields -
-  `contents` (the line of code itself) and `language` (the programming language
-  the line of code is in).
-- The `Line` type in `types.ts` contains those two fields. Think about TypeScript
-  types like JavaScript objects, except your code editor raises an error if you
-  put the wrong fields in.
-- Lastly, `getRandomLine` is an async function that fetches a random line from
-  files in the `public` folder, and returns a `Line` object.
+> **NOTE**: We are *not* triggering a change whenever we press the button, that is
+> not quite what we want! We want a change whenever the number of lines of code changes
+> because in future tasks we're going to be implementing the "idle" part of our idle
+> game - allowing the player to buy upgrades which "write lines of code" for them.
 
-It is now your job to link it all up.
+Some things have already been implemented for you:
+
+- In the `components` folder, there is a component called `Highlight` - if you
+  give it a line of code and the programming language that line is in, a line with
+  correct syntax highlighting will be displayed.
+- If you look carefully at `Highlight`, you'll see that the line and the programming
+  language are represented with something called a `Line`. This is a **type**, which
+  is a lot like a C `struct` definition. We use types so that if your text editor
+  is smart enough, it can catch errors before you even run your program.
+- In `App.tsx`, `getRandomLine()` is a function that looks through all the files in
+  `public/code` (the details of which are defined in the constant `CODE_FILES`) and
+  spits out a random `Line`, to be used in `Highlight`.
+
+It's your job to piece together all these provided functions and components to trigger
+an update of `Highlight` every time we gain a new line of code.
 
 ### Task 3: The idle game
 
