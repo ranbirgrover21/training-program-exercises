@@ -2,7 +2,21 @@
 - Exercise directory: `/exercises/idle-game`
 - Sample answer: `/exercise-solutions/idle-game`
 
-With the power of `useState` and `useEffect`, we are going to make a small game.
+With the power of `useState` and `useEffect`, we are going to make a small **idle game**.
+
+An **idle game** (also known as an **incremental game**) is a game that slowly gets the
+player to gain resources automatically - and thus, "idle" from the game and make progress.
+Some examples of idle games are:
+- [**Cookie Clicker**](https://orteil.dashnet.org/cookieclicker/) - perhaps the most famous
+idle game of them all, players click cookies to buy grandmas to bake cookies, farms to dig
+cookies out of the ground... all to get as many cookies as humanly possible.
+- [**A Dark Room**](https://adarkroom.doublespeakgames.com/) - a minimal, text-based take on
+the genre, where you slowly gain resources to advance further and further along an
+overarching story.
+- [**Clicker Heroes**](https://www.clickerheroes.com/) - increase your damage per second and
+defeat stronger and stronger monsters.
+
+If you want to find more interesting games in the genre, have a look at [r/incremental_games](https://www.reddit.com/r/incremental_games/).
 
 ## Premise
 
