@@ -41,8 +41,9 @@ const getRandomLine = async (): Promise<Line> => {
 };
 
 export default function App() {
-  // TODO: Task 2 - modify `codeLine` to "update" every time we
-  // click the "Add line" button.
+  // TODO: Task 2 - replace `codeLine` with something that changes
+  // every time we increment the number of lines of code written, and
+  // wire it up to `Highlight` such that these changes get displayed.
   const codeLine = {
     contents: "console.log('Hello, World!');",
     language: "javascript",

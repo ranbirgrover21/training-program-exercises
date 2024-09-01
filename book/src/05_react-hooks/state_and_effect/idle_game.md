@@ -84,15 +84,24 @@ Some things have already been implemented for you:
 It's your job to piece together all these provided functions and components to trigger
 an update of `Highlight` every time we gain a new line of code.
 
-### Task 3: The idle game
+### Task 3: Upgrades
 
 We've got a button that makes a number go up, but we're missing the "idle" part
 of our idle game. Now we need a way for our player to buy items that can "click"
-our button for us, and a loop that increments the total lines of code based on
-the items we have.
+our button for us.
 
-A `Resource` type has been provided for you in `types.ts`, with the following
-structure:
+In the sample solution, we have the following two **resources**:
+- The *programmer* produces 0.1 lines of code per second, and costs 20 lines.
+- The *forum answer* produces 0.3 lines of code per second, and costs 50 lines.
+
+After each purchase, the price of an resource will go up by **10%** - so after we
+purchase our first programmer, the next programmer will cost 22 lines.
+
+For this task, you will need to keep track of the number of each type of resource,
+as well as the price to buy another resource.
+
+To encapsulate all the information a resource could contain, a `Resource` type has
+been set up for you in `types.ts`:
 
 ```ts
 export type Resource = {
@@ -107,15 +116,40 @@ export type Resource = {
 };
 ```
 
-In the sample solution, we have the following two resources:
-- The *programmer* produces 0.1 lines of code per second, and costs 20 lines.
-- The *forum answer* produces 0.3 lines of code per second, and costs 50 lines.
+### Task 4 (extension): The "idle" part
 
-After each purchase, the price of an item will go up by 10%.
+Now comes the hard part - having the number *automatically* go up based on what
+resources the player has purchased.
 
-You will need to keep track of each resource the player has (through `useState`),
-and set up a loop to increment the number of lines by the correct amount every second
-(through `useEffect`).
+The easiest way to increment our "number of lines" is to calculate how much we
+increment by every second (e.g. if we have two programmers and one forum answer,
+we will get 0.5 lines every second), and to set up a function to add that increment
+every second. This is where the `setInterval()` function in vanilla JS can come
+in handy. From the [official docs](https://developer.mozilla.org/en-US/docs/Web/API/setInterval) (emphasis mine):
+
+> The `setInterval()` method... **repeatedly calls a function** or executes a code
+> snippet, with a fixed time delay between each call.
+
+Because this is an extension task, we will be covering an aspect of `useEffect`
+that isn't on the [main explainer](index.md). Specifically, `useEffect` can
+*return a function* - what happens is, whenever the dependency array of an `useEffect`
+changes, before re-rendering, the return function gets called. For example:
+
+```jsx
+useEffect(() => {
+  /* ... */
+  return () => console.log("Changing!");
+}, [foo]);
+```
+
+Whenever `foo` changes, we will see `Changing!` printed to the console.
+
+This feature of `useEffect` is especially important for this task - whenever we
+buy a new resource, we also want to change how much we increment our line counter
+by every second. Depending on how you choose to update that increment, you may find
+that you need to remove the old "loop" somehow - another built-in JS function,
+[`clearInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/clearInterval),
+may be useful.
 
 > You may notice that floating-point arithmetic messes up the game by a fair bit -
 > a *bonus challenge* would be to still increment the number of lines by the correct
