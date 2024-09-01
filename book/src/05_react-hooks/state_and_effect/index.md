@@ -1,10 +1,10 @@
 # `useState` and `useEffect`
 
 React components, by themselves, are self-contained - they are basically "just
-functions", when the React engine decides to render a certain component the
-corresponding function just gets called. This is great for representing complex,
-potentially repetitive HTML into simpler, reusable parts, but by themselves
-React components are not interactive.
+functions", when React decides to render a certain component the corresponding
+function just gets called. This is great for representing complex, potentially
+repetitive HTML into simpler, reusable parts, but by themselves React components
+are not interactive.
 
 Consider the scenario where we want to record how many times a button has been
 clicked. We can set up the layout pretty easily within React:
@@ -51,16 +51,27 @@ const App = () => {
 };
 ```
 
-While this would work, if *every* piece of **state** (variables that "persist"
-between renders) was a global variable, we would end up polluting the global
-namespace very quickly, and using global mutable variables is, in general,
-a very bad idea. Fortunately, React has a solution that is much cleaner.
+While this would work, imagine if *every* variable that persists between renders
+was made into a global variable. It's not necessarily a problem if we have one or
+two components, but large-scale apps often have hundreds, if not *thousands*, of
+components that depend on each other. You would need tens of thousands of global
+variables in total, which can cause headaches - you'd need to make sure the names
+don't clash, and you'd need to keep track of which components are using which
+variables.
+
+Furthermore, making variables that anyone can change (in programmer-speak, **mutable**)
+global is a generally bad idea™️. Because any piece of code in our codebase can access
+these global variables by definition, it's very possible that we could accidentally
+write code that changes a global variable we're not meant to touch, causing very
+hard-to-detect bugs.
+
+Fortunately, React has a solution that is much cleaner.
 
 ## Introducing `useState`
 
 `useState` is React's answer. From the [official React guide](https://react.dev/reference/react/hooks):
 
-> **State lets a component “remember” information like user input.** For example,
+> **State lets a component "remember" information like user input.** For example,
 > a form component can use state to store the input value, while an image gallery
 > component can use state to store the selected image index.
 
@@ -168,13 +179,17 @@ const App = () => {
 };
 ```
 
-> Having a dependency array also introduces a React *idiom* of sorts, which is
-> providing an empty array as the second argument to `useEffect`:
+> When looking at React code in the future, you may encounter something like this, where
+> an empty array is provided as the second argument to `useEffect`:
 > 
 > ```jsx
 > useEffect(() => { /* ... */ }, []);
 > ```
 >
+> This is an example of what's known as a programming **idiom** - similar to an English
+> idiom, where it's a piece of code that's *common* and understood to mean something
+> that's *not immediately obvious* when looked at literally.
+> 
 > In an empty array, nothing ever changes between renders because nothing is available
-> inside the array to *be* changed. Thus, this idiom basically allows us to call
-> a function *once* at the very first render of a component.
+> inside the array to *be* changed. Thus, this "idiom" basically allows us to call a
+> function *once* at the very first render of a component.
