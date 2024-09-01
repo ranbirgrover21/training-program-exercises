@@ -192,4 +192,4 @@ const App = () => {
 > 
 > In an empty array, nothing ever changes between renders because nothing is available
 > inside the array to *be* changed. Thus, this "idiom" basically allows us to call a
-> function *once* at the very first render of a component.
+> function *once*, at the *very first render of a component*.
