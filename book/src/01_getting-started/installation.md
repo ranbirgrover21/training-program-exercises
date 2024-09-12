@@ -16,7 +16,7 @@ Git is a version control system that tracks changes to a set of computer files w
 
 This guide will not cover how to work and use Git. If you want to learn how to use Git please read this [Git Basics Guide](https://gist.github.com/jeremyle56/f3b664f0491d6ec0d9a03ab34780b876).
 
-### Installing Git on macOs
+### Installing Git on MacOS
 
 If you're using macOS, open a terminal and enter the following command:
 
@@ -52,7 +52,7 @@ git config --global user.name "Nicole Chun"
 git config --global user.email "hello@devsoc.org.au"
 ```
 
-**You will now need to setup SSH keys which can be done by following the Guide mentioned above.**
+**You will now need to setup SSH keys if you haven't already. [Guide for setting up SSH with GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)**
 
 ## Node and Node Package Manager (NPM) - Windows Local
 
