@@ -8,6 +8,8 @@ const main = document.querySelector("#display-box")
 const button = document.querySelector("button")
 
 button.addEventListener("click", () => {
-    fetch("://api.adviceslip.com/advice")
-        .then(...)
+    fetch("https://api.adviceslip.com/advice")
+        .then(response => response.json()).then((response) => {
+            main.innerText = response.slip.advice;
+        })
 })
